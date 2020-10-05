@@ -470,13 +470,13 @@ pre[class*="language-"] {
 
 <p>The risk of having pneumonia is a quite high for numerous people, especially for the ones in developing 
     nations where billions face shortage in energy and rely on toxic forms of energy. 
-    The World Health Organization estimates that over 4 million premature deaths occur annually from household air pollution-related diseases 
+    The World Health Organization estimates that over 4 million premature deaths occur annually from 
+    household air pollution-related diseases 
     including pneumonia. 
     Over 150 million people get infected with pneumonia on an annual basis especially children under 5 years old. 
     In such regions, the problem can be further aggravated due to the dearth of medical resources and personnel. 
-    For example, in Africa’s 57 nations, a gap of 2.3 million doctors and nurses exists. 
-    For these populations, accurate and fast diagnosis means everything. It can guarantee timely access to 
-    treatment and save much needed time and money for those already experiencing poverty.</p>
+    For example, in 57 nations of Africa, there is a shortage of 2.3 million doctors and nurses. 
+    For these populations, accurate and fast diagnosis mean everything.</p>
 
 <h3 id="toc_1">The Dataset</h3>
 
@@ -490,9 +490,22 @@ pre[class*="language-"] {
     The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. 
     In order to account for any grading errors, the evaluation set was also checked by a third expert. </p>
 
-<h2 id="toc_2">Introduction</h2>
+<p> The normal chest X-ray (left panel) depicts clear lungs without any areas of abnormal opacification in the image. 
+    Bacterial pneumonia (middle) typically exhibits a focal lobar consolidation, whereas 
+    viral pneumonia (right) manifests with a more diffuse interstitial pattern in both lungs.</p>
+    <p><center>
+    <img src="preview_images/IM-0001-0001.jpeg" alt="Normal Lung" height="190" width="190">
+    <img src="preview_images/person99_bacteria_473.jpeg" alt="Bacterial Pneumonia Lung" height="190" width="190">
+    <img src="preview_images/person1_virus_7.jpeg" alt="Viral Pneumonia Lung" height="190" width="190">
+    </center></p>
 
 
+    <h2 id="toc_2">The Problem</h2>
+<p>
+The challenge is to build a deep learning model which can identify whether or not a person is suffering from 
+pneumonia by seeing the chest X-ray images of the patient. 
+The model needs to have a pretty high accuracy since it is a medical problem.
+</p>
 <h2 id="toc_2">Acknowledgements: Data</h2>
 
 <p><b>Data</b>: <a href = "https://data.mendeley.com/datasets/rscbjbr9sj/2">https://data.mendeley.com/datasets/rscbjbr9sj/2</a></p>
