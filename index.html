@@ -480,32 +480,38 @@ pre[class*="language-"] {
 
 <h3 id="toc_1">The Dataset</h3>
 
-<p>The dataset can be found from Kaggle <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">Chest X-Ray Images</a>. It is organized into 3 folders (train, test, val) and contains subfolders for each image category (Pneumonia/Normal). There are 5,863 X-Ray images (JPEG) and 2 categories (Pneumonia/Normal).
-
+<p>The dataset can be found from Kaggle <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">Chest X-Ray Images</a>. It is organized into 3 folders (train, test, val) and contains subfolders for each image category (Pneumonia/Normal). There are 5,863 X-Ray images (JPEG) and 2 categories (Pneumonia/Normal).<br>
+    <p>
     Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one to five years old from 
-    Guangzhou Women and Children’s Medical Center, Guangzhou. 
+    Guangzhou Women and Children’s Medical Center, Guangzhou.
     All chest X-ray imaging was performed as part of patients’ routine clinical care.
     For the analysis of chest x-ray images, all chest radiographs were initially screened for quality 
-    control by removing all low quality or unreadable scans. 
+    control by removing all low quality or unreadable scans.</p> 
     The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. 
     In order to account for any grading errors, the evaluation set was also checked by a third expert. </p>
 
-<p> The normal chest X-ray (left panel) depicts clear lungs without any areas of abnormal opacification in the image. 
-    Bacterial pneumonia (middle) typically exhibits a focal lobar consolidation, whereas 
-    viral pneumonia (right) manifests with a more diffuse interstitial pattern in both lungs.</p>
     <p><center>
     <img src="preview_images/IM-0001-0001.jpeg" alt="Normal Lung" height="190" width="190">
     <img src="preview_images/person99_bacteria_473.jpeg" alt="Bacterial Pneumonia Lung" height="190" width="190">
     <img src="preview_images/person1_virus_7.jpeg" alt="Viral Pneumonia Lung" height="190" width="190">
     </center></p>
+    <p> The normal chest X-ray (left panel) depicts clear lungs without any areas of abnormal opacification in the image. 
+        Bacterial pneumonia (middle) typically exhibits a focal lobar consolidation, whereas 
+        viral pneumonia (right) manifests with a more diffuse interstitial pattern in both lungs.</p>
 
-
-    <h2 id="toc_2">The Problem</h2>
+<h2 id="toc_2">The Problem</h2>
 <p>
 The challenge is to build a deep learning model which can identify whether or not a person is suffering from 
 pneumonia by seeing the chest X-ray images of the patient. 
 The model needs to have a pretty high accuracy since it is a medical problem.
 </p>
+
+<h2 id="toc_2">Image Analysis</h2>
+
+<h2 id="toc_2">Deep Learning Model</h2>
+
+<h2 id="toc_2">Conclusion</h2>
+
 <h2 id="toc_2">Acknowledgements: Data</h2>
 
 <p><b>Data</b>: <a href = "https://data.mendeley.com/datasets/rscbjbr9sj/2">https://data.mendeley.com/datasets/rscbjbr9sj/2</a></p>
