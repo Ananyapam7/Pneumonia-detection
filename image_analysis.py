@@ -89,11 +89,13 @@ for i in range(1, columns*rows +1):
     plt.imshow(edges)
     plt.axis(False)
 
+#Plot the pixel distribution
 
 fig=plt.figure(figsize=(15, 10))
 columns = 4; rows = 2
 for i in range(1, columns*rows +1):
     img = cv2.imread(images[i])
+    img = cv2.resize(img, (512, 512))
     fig.add_subplot(rows, columns, i)
     plt.hist(img.ravel(),256,[0,256])
     plt.axis(False)
