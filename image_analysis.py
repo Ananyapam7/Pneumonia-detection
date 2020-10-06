@@ -36,7 +36,7 @@ print(f"Total Normal Images: {len(NORMAL_IMAGES)}")
 
 random.shuffle(NORMAL_IMAGES)
 random.shuffle(PNEUMONIA_IMAGES)
-images = NORMAL_IMAGES[:50] + PNEUMONIA_IMAGES[:50]
+images = PNEUMONIA_IMAGES[:50] +NORMAL_IMAGES[:50]
 
 def extract_properties(image_path):
     
@@ -58,13 +58,16 @@ def extract_properties(image_path):
     
     return TYPE, height, width, br_med, br_std
 
+
+
 #Viewing the images
 fig = plt.figure(figsize=(15, 10))
 columns = 4; rows = 2
 for i in range(1, columns*rows +1):
     img = cv2.imread(images[i])
     img = cv2.resize(img, (128, 128))
-    fig.add_subplot(rows, columns, i)
+    name = extract_properties(images[i])
+    fig.add_subplot(rows, columns, i).title.set_text(name[0])
     plt.imshow(img)
     plt.axis(False)
 
@@ -78,7 +81,8 @@ for i in range(1, columns*rows +1):
     img = cv2.resize(img, (512, 512))
     img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     img = cv2.addWeighted (img, 4, cv2.GaussianBlur(img, (0,0), 512/10), -4, 128)
-    fig.add_subplot(rows, columns, i)
+    name = extract_properties(images[i])
+    fig.add_subplot(rows, columns, i).title.set_text(name[0])
     plt.imshow(img)
     plt.axis(False)
 
@@ -93,7 +97,8 @@ for i in range(1, columns*rows +1):
     img = cv2.resize(img, (512, 512))
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img = fgbg.apply(img)
-    fig.add_subplot(rows, columns, i)
+    name = extract_properties(images[i])
+    fig.add_subplot(rows, columns, i).title.set_text(name[0])
     plt.imshow(img)
     plt.axis(False)
 
@@ -106,7 +111,8 @@ for i in range(1, columns*rows +1):
     img = cv2.resize(img, (512, 512))
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     edges = cv2.Canny(img, 80, 100)
-    fig.add_subplot(rows, columns, i)
+    name = extract_properties(images[i])
+    fig.add_subplot(rows, columns, i).title.set_text(name[0])
     plt.imshow(edges)
     plt.axis(False)
 
@@ -117,7 +123,8 @@ columns = 4; rows = 2
 for i in range(1, columns*rows +1):
     img = cv2.imread(images[i])
     img = cv2.resize(img, (512, 512))
-    fig.add_subplot(rows, columns, i)
+    name = extract_properties(images[i])
+    fig.add_subplot(rows, columns, i).title.set_text(name[0])
     plt.hist(img.ravel(),256,[0,256])
     plt.axis(False)
 
