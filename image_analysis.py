@@ -74,67 +74,67 @@ def extract_properties(image_path):
 
 print (extract_properties("../chest_xray/test/PNEUMONIA/person1_virus_8.jpeg"))
 
-# #Viewing the images
-# fig = plt.figure(figsize=(15, 10))
-# columns = 4; rows = 2
-# for i in range(1, columns*rows +1):
+#Viewing the images
+fig = plt.figure(figsize=(15, 10))
+columns = 4; rows = 2
+for i in range(1, columns*rows +1):
 
-#     img = cv2.imread(images[i])
-#     img = cv2.resize(img, (128, 128))
-#     fig.add_subplot(rows, columns, i)
-#     plt.imshow(img)
-#     plt.axis(False)
+    img = cv2.imread(images[i])
+    img = cv2.resize(img, (128, 128))
+    fig.add_subplot(rows, columns, i)
+    plt.imshow(img)
+    plt.axis(False)
 
-# #Ben Graham's method  of using grayscale images and then applying Gaussian Blur to them.
+#Ben Graham's method  of using grayscale images and then applying Gaussian Blur to them.
 
-# fig=plt.figure(figsize=(15, 10))
-# columns = 4; rows = 2
-# for i in range(1, columns*rows +1):
-#     img = cv2.imread(images[i])
-#     img = cv2.resize(img, (512, 512))
-#     img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-#     img = cv2.addWeighted (img, 4, cv2.GaussianBlur(img, (0,0), 512/10), -4, 128)
-#     fig.add_subplot(rows, columns, i)
-#     plt.imshow(img)
-#     plt.axis(False)
+fig=plt.figure(figsize=(15, 10))
+columns = 4; rows = 2
+for i in range(1, columns*rows +1):
+    img = cv2.imread(images[i])
+    img = cv2.resize(img, (512, 512))
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    img = cv2.addWeighted (img, 4, cv2.GaussianBlur(img, (0,0), 512/10), -4, 128)
+    fig.add_subplot(rows, columns, i)
+    plt.imshow(img)
+    plt.axis(False)
 
-# #Background Subtraction Method
+#Background Subtraction Method
 
-# fgbg = cv2.createBackgroundSubtractorMOG2()
+fgbg = cv2.createBackgroundSubtractorMOG2()
 
-# fig=plt.figure(figsize=(15, 10))
-# columns = 4; rows = 2
-# for i in range(1, columns*rows +1):
-#     img = cv2.imread(images[i])
-#     img = cv2.resize(img, (512, 512))
-#     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-#     img = fgbg.apply(img)
-#     fig.add_subplot(rows, columns, i)
-#     plt.imshow(img)
-#     plt.axis(False)
+fig=plt.figure(figsize=(15, 10))
+columns = 4; rows = 2
+for i in range(1, columns*rows +1):
+    img = cv2.imread(images[i])
+    img = cv2.resize(img, (512, 512))
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    img = fgbg.apply(img)
+    fig.add_subplot(rows, columns, i)
+    plt.imshow(img)
+    plt.axis(False)
 
-# # Canny Edge Detection
+# Canny Edge Detection
 
-# fig=plt.figure(figsize=(15, 10))
-# columns = 4; rows = 2
-# for i in range(1, columns*rows +1):
-#     img = cv2.imread(images[i])
-#     img = cv2.resize(img, (512, 512))
-#     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-#     edges = cv2.Canny(img, 80, 100)
-#     fig.add_subplot(rows, columns, i)
-#     plt.imshow(edges)
-#     plt.axis(False)
+fig=plt.figure(figsize=(15, 10))
+columns = 4; rows = 2
+for i in range(1, columns*rows +1):
+    img = cv2.imread(images[i])
+    img = cv2.resize(img, (512, 512))
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    edges = cv2.Canny(img, 80, 100)
+    fig.add_subplot(rows, columns, i)
+    plt.imshow(edges)
+    plt.axis(False)
 
-# #Plot the pixel distribution
+#Plot the pixel distribution
 
-# fig=plt.figure(figsize=(15, 10))
-# columns = 4; rows = 2
-# for i in range(1, columns*rows +1):
-#     img = cv2.imread(images[i])
-#     img = cv2.resize(img, (512, 512))
-#     fig.add_subplot(rows, columns, i)
-#     plt.hist(img.ravel(),256,[0,256])
-#     plt.axis(False)
+fig=plt.figure(figsize=(15, 10))
+columns = 4; rows = 2
+for i in range(1, columns*rows +1):
+    img = cv2.imread(images[i])
+    img = cv2.resize(img, (512, 512))
+    fig.add_subplot(rows, columns, i)
+    plt.hist(img.ravel(),256,[0,256])
+    plt.axis(False)
 
-# plt.show() 
+plt.show() 
