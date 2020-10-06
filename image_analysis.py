@@ -31,8 +31,8 @@ for folder in FOLDERS:
     NORMAL_IMAGES.extend(normal)
     PNEUMONIA_IMAGES.extend(pneumonia)
 
-#print(f"Total Pneumonia Images: {len(PNEUMONIA_IMAGES)}")
-#print(f"Total Normal Images: {len(NORMAL_IMAGES)}")
+print(f"Total Pneumonia Images: {len(PNEUMONIA_IMAGES)}")
+print(f"Total Normal Images: {len(NORMAL_IMAGES)}")
 
 random.shuffle(NORMAL_IMAGES)
 random.shuffle(PNEUMONIA_IMAGES)
