@@ -68,6 +68,7 @@ for i in range(1, columns*rows +1):
     img = cv2.resize(img, (128, 128))
     name = extract_properties(images[i])
     fig.add_subplot(rows, columns, i).title.set_text(name[0])
+    fig.suptitle('Raw Images')
     plt.imshow(img)
     plt.axis(False)
 
@@ -83,6 +84,7 @@ for i in range(1, columns*rows +1):
     img = cv2.addWeighted (img, 4, cv2.GaussianBlur(img, (0,0), 512/10), -4, 128)
     name = extract_properties(images[i])
     fig.add_subplot(rows, columns, i).title.set_text(name[0])
+    fig.suptitle('Ben Grahams Method of Preprocessing')
     plt.imshow(img)
     plt.axis(False)
 
@@ -99,6 +101,7 @@ for i in range(1, columns*rows +1):
     img = fgbg.apply(img)
     name = extract_properties(images[i])
     fig.add_subplot(rows, columns, i).title.set_text(name[0])
+    fig.suptitle('Background Subtraction Method')
     plt.imshow(img)
     plt.axis(False)
 
@@ -113,6 +116,7 @@ for i in range(1, columns*rows +1):
     edges = cv2.Canny(img, 80, 100)
     name = extract_properties(images[i])
     fig.add_subplot(rows, columns, i).title.set_text(name[0])
+    fig.suptitle('Canny Edge Detection')
     plt.imshow(edges)
     plt.axis(False)
 
@@ -125,6 +129,7 @@ for i in range(1, columns*rows +1):
     img = cv2.resize(img, (512, 512))
     name = extract_properties(images[i])
     fig.add_subplot(rows, columns, i).title.set_text(name[0])
+    fig.suptitle('Plotting the pixel distribution')
     plt.hist(img.ravel(),256,[0,256])
     plt.axis(False)
 
