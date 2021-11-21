@@ -506,23 +506,24 @@ The aim of this project is to develop a robust deep learning model from scratch 
 </p>
 
 <h2 id="toc_2">Exploratory Data Analysis</h2>
-	<ul> Ben Graham's Method <ul>
+	<h3> Ben Graham's Method </h3>
 	<img src="preview_images/Figure_2.png">
-	<ul> Canny Edge Detection <ul>
+	<h3> Canny Edge Detection </h3>
 	<img src="preview_images/Figure_4.png">
-	<ul> Background Substraction <ul>
+	<h3> Background Substraction </h3>
 	<img src="preview_images/Figure_3.png">
 
 <h2 id="toc_2">The Model</h2>
 	<p>
 		Since we have less data, <b>we should learn, but wisely</b>. We will be doing partial transfer learning and rest of the model will be trained from scratch. This is the approach we will follow when it comes to building deep learning models from scratch on limited data.
-
-<ul> Choose a simple architecture.
-<ul> Initialize the first few layers from a network that is pretrained on imagenet. This is because first few layers capture general details like color blobs, patches, edges, etc. Instead of randomly initialized weights for these layers, it would be much better if you fine tune them.</ul>
-<ul> Choose layers that introduce a lesser number of parameters. For example, Depthwise SeparableConv is a good replacement for Conv layer. It introduces lesser number of parameters as compared to normal convolution and as different filters are applied to each channel, it captures more information. Xception a powerful network, is built on top of such layers only. </ul>
-<ul> Use batch norm with convolutions. As the network becomes deeper, batch norm start to play an important role.</ul>
-<ul> Add dense layers with reasonable amount of neurons. Train with a higher learning rate and experiment with the number of neurons in the dense layers. Do it for the depth of your network too.</ul>
-<ul> Once you know a good depth, start training your network with a lower learning rate along with decay.</ul>
+<ul>
+<li> Choose a simple architecture.
+<li> Initialize the first few layers from a network that is pretrained on imagenet. This is because first few layers capture general details like color blobs, patches, edges, etc. Instead of randomly initialized weights for these layers, it would be much better if you fine tune them.
+<li> Choose layers that introduce a lesser number of parameters. For example, Depthwise SeparableConv is a good replacement for Conv layer. It introduces lesser number of parameters as compared to normal convolution and as different filters are applied to each channel, it captures more information. Xception a powerful network, is built on top of such layers only. 
+<li> Use batch norm with convolutions. As the network becomes deeper, batch norm start to play an important role.
+<li> Add dense layers with reasonable amount of neurons. Train with a higher learning rate and experiment with the number of neurons in the dense layers. Do it for the depth of your network too.
+<li> Once you know a good depth, start training your network with a lower learning rate along with decay.
+<ul>
 
 	
 	<img src="preview_images/VGG-16.png" class="center">
