@@ -36,7 +36,7 @@ The normal chest X-ray (left panel) depicts clear lungs without any areas of abn
 
 - **Background Substraction**
 
-<img src="preview_images/Figure_3.png" width="500" height="300">
+<img src="preview_images/Figure_3.png" width="800" height="500" class="center">
 
 ## Model
 
