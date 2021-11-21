@@ -36,7 +36,7 @@ The normal chest X-ray (left panel) depicts clear lungs without any areas of abn
 
 - **Background Substraction**
 
-![EDA](preview_images/Figure_3.png "EDA" =100x20) 
+<img src="preview_images/Figure_3.png" width="100" height="100">
 
 ## Model
 
@@ -49,7 +49,7 @@ Since we have less data, **we should learn, but wisely**. We will be doing parti
 - Add dense layers with reasonable amount of neurons. Train with a higher learning rate and experiment with the number of neurons in the dense layers. Do it for the depth of your network too.
 - Once you know a good depth, start training your network with a lower learning rate along with decay.
 
-| ![Standard VGG 16 Model](preview_images/VGG-16.png =100x20) | 
+| ![Standard VGG 16 Model](preview_images/VGG-16.png) | 
 |:--:| 
 | *Architecture of the standard VGG 16 model* |
 
