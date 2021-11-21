@@ -62,6 +62,7 @@ When a particular problem includes an imbalanced dataset, then accuracy isn't a 
 
 We will get the confusion matrix from our predictions and see what is the recall and precision of our model.
 
+![matrix](preview_images/matrix.png)
 
 ## Acknowledgements
 
