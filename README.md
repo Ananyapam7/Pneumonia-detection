@@ -49,6 +49,10 @@ Since we have less data, **we should learn, but wisely**. We will be doing parti
 - Add dense layers with reasonable amount of neurons. Train with a higher learning rate and experiment with the number of neurons in the dense layers. Do it for the depth of your network too.
 - Once you know a good depth, start training your network with a lower learning rate along with decay.
 
+| ![Standard VGG 16 Model](preview_images/VGG-16.png) | 
+|:--:| 
+| *Space* |
+
 
 For building the classification model, I have used the VGG-16 architecure and I simply let the weights of the first two layers remain the same and trained the remaining  layers. 
 
