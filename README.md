@@ -1,5 +1,7 @@
 # Pneumonia Detection Using Partial Transfer Learning on Depthwise Convolutions
 
+The risk of having pneumonia is a quite high for numerous people, especially for the ones in developing nations where billions face shortage in energy and rely on toxic forms of energy. The World Health Organization estimates that over 4 million premature deaths occur annually from household air pollution-related diseases including pneumonia. Over 150 million people get infected with pneumonia on an annual basis especially children under 5 years old. In such regions, the problem can be further aggravated due to the dearth of medical resources and personnel. For example, in 57 nations of Africa, there is a shortage of 2.3 million doctors and nurses. For these populations, accurate and fast diagnosis mean everything.
+
 ## Background
 
 Pneumonia is a very common disease. It can be either:
