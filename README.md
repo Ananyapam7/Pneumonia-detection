@@ -27,12 +27,14 @@ The normal chest X-ray (left panel) depicts clear lungs without any areas of abn
 - **Ben Graham's method** 
 
 ![EDA](preview_images/Figure_2.png "EDA")
+
 - **Canny Edge Detection**
 
-![EDA](preview_images/Figure_3.png "EDA")
+![EDA](preview_images/Figure_4.png "EDA")
+
 - **Background Substraction**
 
-![EDA](preview_images/Figure_4.png "EDA")
+![EDA](preview_images/Figure_3.png "EDA") 
 
 ## Model
 
