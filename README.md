@@ -51,7 +51,7 @@ Since we have less data, **we should learn, but wisely**. We will be doing parti
 
 | ![Standard VGG 16 Model](preview_images/VGG-16.png) | 
 |:--:| 
-| *Space* |
+| *Architecture of the standard VGG 16 model* |
 
 
 For building the classification model, I have used the VGG-16 architecure and I simply let the weights of the first two layers remain the same and trained the remaining  layers. 
