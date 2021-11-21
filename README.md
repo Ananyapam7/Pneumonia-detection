@@ -26,17 +26,17 @@ The normal chest X-ray (left panel) depicts clear lungs without any areas of abn
 
 ## Exploratory Data Analysis(EDA)
 
-- **Ben Graham's method** 
+- **Ben Graham's method**
 
-<img src="preview_images/Figure_2.png" width="1200" height="600" class="center">
+<img src="preview_images/Figure_2.png" width="1000" height="600" class="center">
 
 - **Canny Edge Detection**
 
-<img src="preview_images/Figure_4.png" width="1200" height="600" class="center">
+<img src="preview_images/Figure_4.png" width="1000" height="600" class="center">
 
 - **Background Substraction**
 
-<img src="preview_images/Figure_3.png" width="1200" height="600" class="center">
+<img src="preview_images/Figure_3.png" width="1000" height="600" class="center">
 
 ## Model
 
