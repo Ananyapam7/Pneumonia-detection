@@ -22,21 +22,21 @@ For the analysis of chest x-ray images, all chest radiographs were initially scr
 
 The normal chest X-ray (left panel) depicts clear lungs without any areas of abnormal opacification in the image. Bacterial pneumonia (middle) typically exhibits a focal lobar consolidation, whereas viral pneumonia (right) manifests with a more diffuse interstitial pattern in both lungs.
 
-<img src="preview_images/Figure_1.png" width="1200" height="600" class="center">
+<img src="preview_images/Figure_1.png" width="800" height="400" class="center">
 
 ## Exploratory Data Analysis(EDA)
 
 - **Ben Graham's method**
 
-<img src="preview_images/Figure_2.png" width="1000" height="600" class="center">
+<img src="preview_images/Figure_2.png" width="800" height="400" class="center">
 
 - **Canny Edge Detection**
 
-<img src="preview_images/Figure_4.png" width="1000" height="600" class="center">
+<img src="preview_images/Figure_4.png" width="800" height="400" class="center">
 
 - **Background Substraction**
 
-<img src="preview_images/Figure_3.png" width="1000" height="600" class="center">
+<img src="preview_images/Figure_3.png" width="800" height="400" class="center">
 
 ## Model
 
