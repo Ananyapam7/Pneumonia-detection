@@ -22,21 +22,21 @@ For the analysis of chest x-ray images, all chest radiographs were initially scr
 
 The normal chest X-ray (left panel) depicts clear lungs without any areas of abnormal opacification in the image. Bacterial pneumonia (middle) typically exhibits a focal lobar consolidation, whereas viral pneumonia (right) manifests with a more diffuse interstitial pattern in both lungs.
 
-![Dataset](preview_images/Figure_1.png "Preview")
+![Dataset](preview_images/Figure_1.png "Preview" =100x20)
 
 ## Exploratory Data Analysis(EDA)
 
 - **Ben Graham's method** 
 
-![EDA](preview_images/Figure_2.png "EDA")
+![EDA](preview_images/Figure_2.png "EDA" =100x20)
 
 - **Canny Edge Detection**
 
-![EDA](preview_images/Figure_4.png "EDA")
+![EDA](preview_images/Figure_4.png "EDA" =100x20)
 
 - **Background Substraction**
 
-![EDA](preview_images/Figure_3.png "EDA") 
+![EDA](preview_images/Figure_3.png "EDA" =100x20) 
 
 ## Model
 
@@ -49,7 +49,7 @@ Since we have less data, **we should learn, but wisely**. We will be doing parti
 - Add dense layers with reasonable amount of neurons. Train with a higher learning rate and experiment with the number of neurons in the dense layers. Do it for the depth of your network too.
 - Once you know a good depth, start training your network with a lower learning rate along with decay.
 
-| ![Standard VGG 16 Model](preview_images/VGG-16.png) | 
+| ![Standard VGG 16 Model](preview_images/VGG-16.png =100x20) | 
 |:--:| 
 | *Architecture of the standard VGG 16 model* |
 
