@@ -58,11 +58,19 @@ For building the classification model, I have used the VGG-16 architecure and I 
 
 ## Results
 
-When a particular problem includes an imbalanced dataset, then accuracy isn't a good metric to look for. For example, if your dataset contains 95 negatives and 5 positives, having a model with 95% accuracy doesn't make sense at all. The classifier might label every example as negative and still achieve 95% accuracy. Hence, we need to look for alternative metrics. Precision and Recall are really good metrics for such kind of problems.
+When a particular problem includes an imbalanced dataset, then accuracy isn't a good metric to look for. For example, if your dataset contains 95 negatives and 5 positives, having a model with 95% accuracy doesn't make sense at all. The classifier might label every example as negative and still achieve 95% accuracy. Hence, we need to look for alternative metrics. 
+
+**Precision** and **Recall** are really good metrics for such kind of problems.
 
 We will get the confusion matrix from our predictions and see what is the recall and precision of our model.
 
 ![matrix](preview_images/matrix.png)
+
+## Conclusion
+
+Our model has a 98% recall. In such problems, a good recall value is expected. But if you notice, the precision is only 80%. 
+
+Precision and Recall follows a trade-off, and we need to find a point where your recall, as well as your precision, is more than good but both can't increase simultaneously. 
 
 ## Acknowledgements
 
